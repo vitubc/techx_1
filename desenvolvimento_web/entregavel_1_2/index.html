@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Blog de Tecnologia</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header id="inicio">
+        <h1>Blog de Tecnologia</h1>
+        <nav>
+            <a href="#inicio">Início</a>
+            <a href="#artigos">Artigos</a>
+            <a href="#inscricao">Inscrição</a>
+        </nav>
+    </header>
+
+    <main id="artigos">
+        <article>
+            <h2>A importância da tecnologia</h2>
+            <p>A tecnologia facilita a comunicação, o aprendizado e diversas tarefas do dia a dia.</p>
+            <img src="https://images.unsplash.com/photo-1518770660439-4636190af475" alt="Placa de computador">
+        </article>
+
+        <article>
+            <h2>Aprendendo desenvolvimento web</h2>
+            <p>HTML é a linguagem utilizada para organizar e estruturar o conteúdo das páginas web.</p>
+            <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085" alt="Computador com códigos">
+        </article>
+    </main>
+
+    <aside id="inscricao" class="container">
+        <h2>Inscreva-se no blog</h2>
+
+        <form method="get">
+            <div class="linha">
+                <div class="campo">
+                    <label for="nome">Nome:</label>
+                    <input type="text" id="nome" name="nome" minlength="3" required>
+                </div>
+
+                <div class="campo">
+                    <label for="email">E-mail:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+            </div>
+
+            <div class="campo">
+                <label for="idade">Idade:</label>
+                <input type="number" id="idade" name="idade" min="18" max="120" required>
+            </div>
+
+            <div class="campo">
+                <label for="assunto">Assunto:</label>
+                <select id="assunto" name="assunto">
+                    <option value="programacao">Programação</option>
+                    <option value="tecnologia">Tecnologia</option>
+                    <option value="carreira">Carreira</option>
+                </select>
+            </div>
+
+            <div class="termos">
+                <input type="checkbox" id="termos" name="termos" required>
+                <label for="termos">Aceito os termos</label>
+            </div>
+
+            <button type="submit">Enviar</button>
+        </form>
+    </aside>
+
+    <footer>
+        <p>Blog de Tecnologia - 2026</p>
+    </footer>
+</body>
+</html>
